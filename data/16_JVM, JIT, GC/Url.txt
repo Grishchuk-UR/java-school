@@ -1,0 +1,7 @@
+http://jeeconf.com/archive/jeeconf-2013/materials/jit-compiler/
+
+
+GC
+http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
+https://ggenikus.github.io/blog/2014/05/04/gc/
+http://www.slideshare.net/iwanowww/g1-gc-12594776
