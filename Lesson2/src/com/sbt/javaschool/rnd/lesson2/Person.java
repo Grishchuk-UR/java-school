@@ -5,20 +5,18 @@ public class Person {
 
     private final boolean man;
     private final String name;
-
-
     private final Integer age;
+
     private Person spouse;
 
     public Person(boolean man, String name, Integer age) {
         this.man = man;
         this.name = name;
         this.age = age;
-
     }
 
     public Integer getAge() {
-        return age;
+        return this.age;
     }
 
     public boolean isMan() {
