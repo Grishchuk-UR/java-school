@@ -5,7 +5,10 @@ public class Person {
 
     private final boolean man;
     private final String name;
+
+
     private final Integer age;
+
 
     private Person spouse;
 
@@ -13,10 +16,15 @@ public class Person {
         this.man = man;
         this.name = name;
         this.age = age;
+
+    }
+
+    public Person getSpouse() {
+        return this.spouse;
     }
 
     public Integer getAge() {
-        return this.age;
+        return age;
     }
 
     public boolean isMan() {
@@ -26,7 +34,7 @@ public class Person {
     public boolean Marry(Person person) {
         if (this.spouse == null) {
             if (person.man != this.man) {
-                if (this.age > 18 && person.age > 18) {
+                if (this.age >= 18 && person.age >= 18) {
                     if (person.spouse != null)
                         person.Divorce();
                     person.spouse = this;
@@ -43,8 +51,14 @@ public class Person {
 
             }
         } else {
-            if (this.Divorce())
+            if (this == person.spouse && this.spouse == person) {
+                System.out.println(this.name + " and " + person.name + " already married \n");
+                return false;
+            }
+            if (this.Divorce()) {
                 this.Marry(person);
+                return false;
+            }
         }
         return true;
 
