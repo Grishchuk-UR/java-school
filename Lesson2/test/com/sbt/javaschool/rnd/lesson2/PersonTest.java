@@ -1,9 +1,9 @@
 package com.sbt.javaschool.rnd.lesson2;
 
 import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,7 +13,7 @@ class PersonTest {
     private Person p3;
     private Person p4;
 
-    @BeforeClass
+    @BeforeEach
     public void createPerson() {
         p1 = new Person(true, "Sam", 22);
         p2 = new Person(false, "Ann", 18);
