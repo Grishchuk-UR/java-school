@@ -29,6 +29,7 @@ public class Collections {
                 String[] arrStr = parseLine(str);
                 addListCollectionWord(arrStr);
                 addSetCollection(arrStr);
+                addMapWord(arrStr);
                 i++;
             }
         } catch (Exception e) {
