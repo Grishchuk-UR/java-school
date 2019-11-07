@@ -12,6 +12,8 @@ public class Person {
 
     private Person spouse;
 
+
+
     public Person(boolean man, String name, Integer age) {
         this.man = man;
         this.name = name;
@@ -19,6 +21,7 @@ public class Person {
 
     }
 
+    public String getName() {   return name;   }
     public Person getSpouse() {
         return this.spouse;
     }
@@ -33,13 +36,13 @@ public class Person {
 
     public boolean Marry(Person person) {
         if (this.spouse == null) {
-            if (person.man != this.man) {
-                if (this.age >= 18 && person.age >= 18) {
-                    if (person.spouse != null)
+            if (person.isMan() != this.isMan()) {
+                if (this.getAge() >= 18 && person.getAge() >= 18) {
+                    if (person.getSpouse() != null)
                         person.Divorce();
                     person.spouse = this;
                     this.spouse = person;
-                    System.out.println(this.name + " and " + person.name + " happy married \n");
+                    System.out.println(this.name + " and " + person.getName() + " happy married \n");
                     return true;
                 } else {
                     System.out.println("Your very young for marriage");
@@ -51,8 +54,8 @@ public class Person {
 
             }
         } else {
-            if (this == person.spouse && this.spouse == person) {
-                System.out.println(this.name + " and " + person.name + " already married \n");
+            if (this == person.getSpouse() && this.getSpouse() == person) {
+                System.out.println(this.name + " and " + person.getName() + " already married \n");
                 return false;
             }
             if (this.Divorce()) {
@@ -66,7 +69,7 @@ public class Person {
 
     public boolean Divorce() {
         if (this.spouse != null) {
-            String name = this.spouse.name;
+            String name = this.spouse.getName();
             this.spouse.spouse = null;
             this.spouse = null;
             System.out.println(this.name + " and " + name + " divorce");
