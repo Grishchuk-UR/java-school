@@ -2,6 +2,7 @@ package com.sbt.javaschool.rnd;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Collections {
@@ -11,6 +12,8 @@ public class Collections {
     private Set<String> hashSet = new TreeSet<String>();
     private Map<Integer, String> map = new HashMap<Integer, String>();
     private Map<String, Integer> mapWord = new HashMap<String, Integer>();
+
+    //MyIterator<String> iterator = new MyIterator<String>(list);
 
     public boolean readDataFile(String path) {
 
@@ -91,22 +94,19 @@ public class Collections {
 
     private String[] parseLine(String line) {
         if (line != null) {
-            String[] array = line.split(" ");
-            return array;
+            return line.split(" ");
         }
         return null;
     }
 
     private void addSetCollection(String[] arr) {
         if (arr != null)
-            for (String a : arr)
-                hashSet.add(a);
+          hashSet.addAll(Arrays.asList(arr));
     }
 
     private void addListCollectionWord(String[] arr) {
         if (arr != null)
-            for (String a : arr)
-                listWord.add(a);
+                listWord.addAll(Arrays.asList(arr));
     }
 
     private void addListCollection(String arr) {
