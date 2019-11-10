@@ -7,11 +7,11 @@ import java.util.*;
 
 public class Collections {
 
-    private List<String> list = new ArrayList<String>();
-    private List<String> listWord = new ArrayList<String>();
-    private Set<String> hashSet = new TreeSet<String>();
-    private Map<Integer, String> map = new HashMap<Integer, String>();
-    private Map<String, Integer> mapWord = new HashMap<String, Integer>();
+    public List<String> list = new ArrayList<String>();
+    public List<String> listWord = new ArrayList<String>();
+    public Set<String> hashSet = new TreeSet<String>();
+    public Map<Integer, String> map = new HashMap<Integer, String>();
+    public Map<String, Integer> mapWord = new HashMap<String, Integer>();
 
     //MyIterator<String> iterator = new MyIterator<String>(list);
 
@@ -36,20 +36,21 @@ public class Collections {
             e.printStackTrace();
             return false;
         }
-
         return true;
     }
 
-    public void printInfoWord(Map<String, Integer> mapWord) {
+    public boolean printInfoWord(Map<String, Integer> mapWord) {
         if (mapWord != null) {
-            System.out.println("В фаиле слов: \n");
+            System.out.println("В фаиле слов (слово - количество): \n");
             for (String s : mapWord.keySet()) {
-                System.out.println(s + " - " + mapWord.get(s).toString()+"\n");
+                System.out.println(s + " - " + mapWord.get(s).toString() + "\n");
             }
+            return true;
         }
+        return false;
     }
 
-    public void addMapWord(String[] arrStr) {
+    public boolean addMapWord(String[] arrStr) {
         if (arrStr != null) {
             for (String s : arrStr) {
                 Integer count = mapWord.get(s);
@@ -57,35 +58,52 @@ public class Collections {
                     count = 0;
                 mapWord.put(s, ++count);
             }
+            return true;
         }
+        return false;
     }
 
-    public void printCountSymbol(Set<String> set) {
+    public boolean printCountSymbol(Set<String> set) {
         if (set != null) {
             Integer size = set.size();
             System.out.println("Количество различных слов в файле: " + size.toString());
+            return true;
         }
+        return false;
     }
 
-    public void printAnySymbolInFile(Set<String> set) {
-        if (set != null)
+    public boolean printAnySymbolInFile(Set<String> set) {
+        if (set != null) {
+            List<String> tempList = new ArrayList<>();
+            tempList.addAll(set);
+            tempList.sort(Comparator.comparingInt(String::length));
             for (String s : set) {
+
                 System.out.println(s + "\n");
             }
+            return true;
+        }
+        return false;
     }
 
-    public void printReversLine(String line) {
+
+    public boolean printReversLine(String line) {
         if (line != null) {
             StringBuffer stringBuffer = new StringBuffer(line);
             System.out.println(stringBuffer.reverse());
+            return true;
         }
+        return false;
     }
 
-    public void printLineForUsers(Integer[] number) {
-        if (number != null)
+    public boolean printLineForUsers(Integer[] number) {
+        if (number != null){
             for (int i : number) {
-                System.out.println(map.get(number[i]));
+                System.out.println(map.get(i));
             }
+            return true;
+        }
+        return false;
     }
 
     private void addDataMap(int i, String line) {
@@ -102,12 +120,12 @@ public class Collections {
 
     private void addSetCollection(String[] arr) {
         if (arr != null)
-          hashSet.addAll(Arrays.asList(arr));
+            hashSet.addAll(Arrays.asList(arr));
     }
 
     private void addListCollectionWord(String[] arr) {
         if (arr != null)
-                listWord.addAll(Arrays.asList(arr));
+            listWord.addAll(Arrays.asList(arr));
     }
 
     private void addListCollection(String arr) {
