@@ -1,4 +1,4 @@
-package com.sbt.javaschool.rnd.homeWork;
+package com.sbt.javaschool.rnd;
 
 import java.util.List;
 

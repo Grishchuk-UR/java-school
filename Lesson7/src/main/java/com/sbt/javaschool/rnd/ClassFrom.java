@@ -1,9 +1,4 @@
-package com.sbt.javaschool.rnd.homeWork;
-
-import org.jetbrains.annotations.Contract;
-import org.w3c.dom.ls.LSOutput;
-
-import javax.imageio.stream.ImageInputStream;
+package com.sbt.javaschool.rnd;
 
 public class ClassFrom {
     public static Integer _number;
@@ -14,7 +9,7 @@ public class ClassFrom {
     public static Integer get_number() {
         return _number;
     }
-    public static void say() {
+    public void say() {
         System.out.println("Say: Say");
     }
 
