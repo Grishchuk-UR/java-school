@@ -9,6 +9,9 @@ public class ClassTo {
     private static Float _float;
     public static List _list;
 
+    public void sayHello(){
+        System.out.println("say : Say Hello");
+    }
     public static Integer get_number() {
         return _number;
     }

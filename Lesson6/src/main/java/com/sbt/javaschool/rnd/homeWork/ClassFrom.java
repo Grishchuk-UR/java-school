@@ -14,7 +14,9 @@ public class ClassFrom {
     public static Integer get_number() {
         return _number;
     }
-
+    public static void say() {
+        System.out.println("Say: Say");
+    }
 
     public static String get_string() {
         return _string;
