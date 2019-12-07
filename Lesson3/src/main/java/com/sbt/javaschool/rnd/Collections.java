@@ -13,7 +13,7 @@ public class Collections {
     public Map<Integer, String> map = new HashMap<Integer, String>();
     public Map<String, Integer> mapWord = new HashMap<String, Integer>();
 
-    //MyIterator<String> iterator = new MyIterator<String>(list);
+
 
     public boolean readDataFile(String path) {
 

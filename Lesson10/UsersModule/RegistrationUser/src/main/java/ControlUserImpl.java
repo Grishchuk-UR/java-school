@@ -37,4 +37,6 @@ public class ControlUserImpl implements ControlUser {
     public User getUser(Integer id) {
         return null;
     }
+
+
 }
