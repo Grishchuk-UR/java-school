@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Lesson10/ChatModule/ChatModule.iml" filepath="$PROJECT_DIR$/Lesson10/ChatModule/ChatModule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson10/FindModule/FindModule.iml" filepath="$PROJECT_DIR$/Lesson10/FindModule/FindModule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson10/GalleryModule/GalleryModule.iml" filepath="$PROJECT_DIR$/Lesson10/GalleryModule/GalleryModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson1/Lesson1.iml" filepath="$PROJECT_DIR$/Lesson1/Lesson1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson10/Lesson10MySocialNetwork.iml" filepath="$PROJECT_DIR$/Lesson10/Lesson10MySocialNetwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson10/Lesson10.iml" filepath="$PROJECT_DIR$/Lesson10/Lesson10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson11/Lesson11.iml" filepath="$PROJECT_DIR$/Lesson11/Lesson11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson2/Lesson2.iml" filepath="$PROJECT_DIR$/Lesson2/Lesson2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson3/Lesson3.iml" filepath="$PROJECT_DIR$/Lesson3/Lesson3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson4/Lesson4.iml" filepath="$PROJECT_DIR$/Lesson4/Lesson4.iml" />

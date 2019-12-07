@@ -2,7 +2,7 @@ package com.sbt.javaschool.rnd.Calculator;
 
 import java.lang.reflect.Proxy;
 
-public class CalculatorMain {
+public class  CalculatorMain {
     public static void main(String[] args) {
         ICalculator calculator = new Calculator();
         calculator.calc(6);

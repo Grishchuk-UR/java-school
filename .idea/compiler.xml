@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="GalleryModule" />
-        <module name="FindModule" />
+        <module name="Lesson11" />
         <module name="ValidatorUsers" />
         <module name="LoginUser" />
         <module name="Lesson9" />
@@ -17,20 +16,17 @@
         <module name="RegistrationUser" />
         <module name="Lesson4" />
         <module name="Lesson3" />
-        <module name="ChatModule" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="13">
-      <module name="ChatModule" target="1.5" />
-      <module name="FindModule" target="1.5" />
-      <module name="GalleryModule" target="1.5" />
-      <module name="Lesson10MySocialNetwork" target="1.5" />
+      <module name="Lesson10" target="1.5" />
+      <module name="Lesson11" target="8" />
       <module name="Lesson3" target="13" />
       <module name="Lesson4" target="13" />
       <module name="Lesson5" target="13" />
       <module name="Lesson6" target="6" />
       <module name="Lesson7" target="13" />
-      <module name="Lesson8" target="1.5" />
+      <module name="Lesson8" target="8" />
       <module name="Lesson9" target="8" />
       <module name="LoginUser" target="1.5" />
       <module name="RegistrationUser" target="1.5" />
