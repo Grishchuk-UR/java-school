@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lesson1/Lesson1.iml" filepath="$PROJECT_DIR$/Lesson1/Lesson1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson10/Lesson10.iml" filepath="$PROJECT_DIR$/Lesson10/Lesson10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson11/Lesson11.iml" filepath="$PROJECT_DIR$/Lesson11/Lesson11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson2/Lesson2.iml" filepath="$PROJECT_DIR$/Lesson2/Lesson2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson3/Lesson3.iml" filepath="$PROJECT_DIR$/Lesson3/Lesson3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson4/Lesson4.iml" filepath="$PROJECT_DIR$/Lesson4/Lesson4.iml" />
@@ -11,6 +13,10 @@
       <module fileurl="file://$PROJECT_DIR$/Lesson7/Lesson7.iml" filepath="$PROJECT_DIR$/Lesson7/Lesson7.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson8/Lesson8.iml" filepath="$PROJECT_DIR$/Lesson8/Lesson8.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson9/Lesson9.iml" filepath="$PROJECT_DIR$/Lesson9/Lesson9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson10/UsersModule/LoginUser/LoginUser.iml" filepath="$PROJECT_DIR$/Lesson10/UsersModule/LoginUser/LoginUser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson10/UsersModule/RegistrationUser/RegistrationUser.iml" filepath="$PROJECT_DIR$/Lesson10/UsersModule/RegistrationUser/RegistrationUser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson10/UsersModule/UsersModule.iml" filepath="$PROJECT_DIR$/Lesson10/UsersModule/UsersModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson10/UsersModule/ValidatorUsers/ValidatorUsers.iml" filepath="$PROJECT_DIR$/Lesson10/UsersModule/ValidatorUsers/ValidatorUsers.iml" />
     </modules>
   </component>
 </project>
