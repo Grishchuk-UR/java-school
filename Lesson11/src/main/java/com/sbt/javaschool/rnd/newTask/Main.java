@@ -12,15 +12,12 @@ public class Main {
         work.addFilePath("C:\\tmp\\file5.txt");
         Object lock = new Object();
         Runnable rn = () -> {
-            synchronized (lock) {
                 work.readData(thBuff);
-            }
+
         };
         Runnable rnW = () -> {
             while (!Thread.currentThread().isInterrupted()) {
-                synchronized (lock) {
                     worker.worker(thBuff, "");
-                }
             }
         };
         Thread thRead = new Thread(rn);
