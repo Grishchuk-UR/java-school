@@ -1,5 +1,8 @@
 package com.sbt.javaschool.rnd.threadPool;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Task implements Runnable {
 
         public void run () {

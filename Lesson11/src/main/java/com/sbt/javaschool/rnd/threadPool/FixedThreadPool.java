@@ -35,7 +35,6 @@ public class FixedThreadPool implements ThreadPool {
 
 
     private final class Task implements Runnable {
-
         @Override
         public void run() {
             while (isRunning) {
